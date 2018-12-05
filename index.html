@@ -1,51 +1,76 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
-<script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-</head>
-<body>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+		<script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<body >
 
-<div data-role="page" id="pageone">
-  <div data-role="header">
-    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">主页</a>
-    <h1>灭霸特效盒子</h1>
-    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">搜索</a>
-  </div>
+		<div data-role="page" id="pageone">
+			<div data-role="header">
+				<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">主页</a>
+				<h1>灭霸特效盒子</h1>
+				<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">搜索</a>
+			</div>
 
-  <div data-role="main" class="ui-content">
-    <div data-role="collapsible">
-      <h1>功能描述</h1>
-      <p>这是一款可以根据玩家意愿而改变游戏中各元素样式的收费软件。简单易懂，价格实惠。你可以一键便创造出属于你的人物模型。</p>
-    </div>
-	<div data-role="collapsible">
-	<h1>使用教程</h1>
-	<p>1: 打开软件 输入购买的卡密。</p>
-	<p>2: 选择你想应用的游戏</p>
-	<p>3: 选择可支持修改的游戏模型</p>
-	<p>4：耐心等待片刻即可</p>
-	</div>
-	<div data-role="collapsible">
-	<h1>购买地址</h1>
-	<p><a href="http://t.cn/E76r9Hk">点我购买</a></p>
-	</div><div data-role="collapsible">
-	<h1>注意事项</h1>
-	<p>使用前请先退出电脑杀毒软件以防误报</p>
-	<p>请认准唯一客服：1120088949 其他的都是骗子</p>
-	</div>
-	<div data-role="collapsible">
-	<h1>联系我们</h1>
-	<p>电话：17373241542</p>
-	<p>qq：1120088949</p>
-	</div>
-  </div>
+			<div data-role="main" class="ui-content">
+				<div data-role="collapsible">
+					<h1>功能描述</h1>
+					<a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">点击查看</a>
 
-  <div data-role="footer">
-    <h1>出品人：诸神黄昏</h1>
-  </div>
-</div>
+					<div data-role="popup" id="myPopup">
+						<h1>这是一款可以根据玩家意愿而改变游戏中各元素样式的收费软件。简单易懂，价格实惠。你可以一键便创造出属于你的人物模型。</h1>
+					</div>
+				</div>
+				<div data-role="collapsible">
+					<h1>使用教程</h1>
+					<a href="#myPopup1" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">点击查看</a>
 
-</body>
+					<div data-role="popup" id="myPopup1">
+						<h1>1: 打开软件 输入购买的卡密.<br />
+							2: 选择你想应用的游戏.<br />
+							3: 选择可支持修改的游戏模型.<br />
+							4：耐心等待片刻即可进入游戏体验.</h1>
+					</div>
+
+				</div>
+				<div data-role="collapsible">
+					<h1>购买地址</h1>
+					<p><a href="#pagetwo" class="ui-btn">点我购买</a></p>
+				</div>
+				<div data-role="collapsible">
+					<h1>注意事项</h1>
+					<p>使用前请先退出电脑杀毒软件以防误报</p>
+					<p>请认准唯一客服：1120088949 其他的都是骗子</p>
+				</div>
+				<div data-role="collapsible">
+					<h1>联系我们</h1>
+					<p>电话：17373241542</p>
+					<p>qq：1120088949</p>
+				</div>
+			</div>
+			
+			<div data-role="footer">
+				<h1>出品人：诸神黄昏</h1>
+			</div>
+			
+		</div>
+		<div data-role="page" data-dialog="true" id="pagetwo">
+						<div data-role="header" data-theme="b">
+							<h1>购买此产品</h1>
+						</div>
+		
+						<div data-role="main" class="ui-content">
+							<p><img src="img/timg%20(1).jpg"style="width: 100px;height: 100px;" >请扫描二维码或付现金给刘宇轩同学</p>
+							<a href="#pageone" class="ui-btn ui-btn-inline">跳转到页面一</a>
+						</div>
+		
+						<div data-role="footer" data-theme="b">
+							<h1>出品人：诸神黄昏</h1>
+						</div>
+					</div>
+
+	</body>
 </html>
